@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(demo
     src/main.cpp
     src/grid_map.cpp
+    src/astar.cpp
 )
 
 target_include_directories(demo PRIVATE include)

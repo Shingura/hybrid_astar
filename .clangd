@@ -1,0 +1,8 @@
+CompileFlags:
+  Add:
+    - -std=c++17
+    # 没有 compile_commands.json 时，clangd 以「源文件所在目录」作为工作目录，
+    # -I 相对路径的基准不确定（src/ 和 tests/ 都在项目根下面一层）。
+    # 两条都写上，哪条命中都行；确认哪条生效后可以删掉另一条。
+    - -Iinclude
+    - -I../include
