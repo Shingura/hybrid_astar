@@ -19,4 +19,8 @@ struct Node
 };
 
 int manhattan_distance(const Node& a, const Node& b);
+std::vector<std::pair<int, int>> reverse_path(
+    const std::vector<std::vector<std::pair<int, int>>> & parent,
+    const Node& start_node,
+    const Node& goal_node);
 std::vector<std::pair<int, int>> astar_search(const GridMap& map, Node start_node, Node goal_node);
